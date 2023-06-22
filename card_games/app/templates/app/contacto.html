@@ -1,0 +1,33 @@
+{%extends 'app/base.html'%}
+
+
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="{% static 'app/css/estilos.css'%}">
+{% endblock %}
+
+{% block contenido %}
+<div class="subheader mt-5" >
+    <img src="{% static 'app/img/inicio_yugioh.jpg' %}" alt="">
+</div>
+<div class ="contenido mt-5" style="background: -webkit-linear-gradient(left,#ff5100,#9d0101);">
+    <div class = "caja1">
+        <h1 class="titulo" style="color: black;">Card Games</h1>
+        <h2>Metodos de Contacto</h2>
+        <p>Oficina Central: Los Prados 533, Lampa. - Chile</p>
+        <p>Consultas al Dm o Whatsapp: +56993140371</p>
+        <p>Correo Electronico: cardGames_tcg@gmail.com</p>
+    </div>
+    <div class="caja2">
+        <h2 class="titulo" style="color: black;" >Sigenos en nuestras redes sociales</h2>
+        <div>
+            <a href = "#" class = "fa fa-facebook"></a>
+            <a href = "https://api.whatsapp.com/send?phone=56993149371" class = "fa fa-whatsapp"></a>
+            <a href = "https://www.instagram.com/vcnt.cus/" class = "fa fa-instagram"></a>
+            <a href = "#" class = "fa fa-envelope"></a>
+        </div>
+    </div>    
+</div>
+
+{% endblock %}

@@ -1,0 +1,31 @@
+{%extends 'app/base.html'%}
+
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="{% static 'app/css/estilos.css'%}">
+{% endblock %}
+
+{% block  contenido %}
+
+
+<section>
+    <div class="cover d-flex justify-content-center align-items-center flex-column"
+        style="background-image: url({% static 'app/img/baner_mitos.jpg'%})">
+        <h1>Card Games</h1>
+    </div>
+    
+    <div>
+        <h1>Quienes Somos</h1>
+        <p class="texto">
+            Esta es una tienda especializada en juegos de cartas coleccionables, desde los clásicos como Pokemon hasta las últimas novedades en el mercado. Contamos con una amplia variedad de cartas y paquetes de cartas especiales, lo que permite ofrecer a nuestros clientes una experiencia de juego completa y emocionante.
+            En esta tienda presentaremos todo tipo de cartas con sus respectivas categorías y un precio único. (Todo lo que se muestra en pantalla son productos totalmente originales e importados desde su país de origen)
+            También organizamos partidos, eventos con premios incluidos, ¡y muchas ofertas express! Síguenos en las redes sociales para mantenerse informados y en contacto en el apartado de Contactos.
+        </p>
+    </div>
+</section>
+
+
+
+{% endblock %}

@@ -1,0 +1,46 @@
+{%extends 'app/base.html'%}
+
+
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="{% static 'app/css/estilos.css'%}">
+{% endblock %}
+
+{% block contenido %}
+<section>
+    <br>
+    <br>
+    <div class="container" id="container_01">
+        <br>
+        <br>
+        <br>
+        <img src="{% static 'app/img/cartas_yugioh/carta_yugi_5.webp'%}" alt="Dark Flare Knight">
+        <h1 class="titulo_pro">Dark Flare Knight</h1>
+        <h2 class="precio">$5.00</h2>
+</section>
+
+
+<section>
+    <br>
+    <div class="container" id="container_02">
+        <br>
+        <h3 class="tipo">tipo</h3>
+        <p>Dark </p>
+        <br>
+        <h3 class="Características">Características</h3>
+        <p>• Ataque = 2200</p>
+        <p>• Defensa = 800</p>
+        <br>
+        <h3 class="Raza">Raza</h3>
+        <p>• Warrior</p>
+        <p>• Fusion</p>
+        <p>• Effect</p>
+        <br>
+        <h3 class="Estrellas">Estrellas</h3>
+        <p>•Estrellas = 6 </p>
+        <br>
+        <br>
+</section>
+
+{% endblock %}
